@@ -36,12 +36,7 @@ public:
   operator uint16_t() const { return m_value; }
 private:
   constexpr static uint16_t GrayScale(uint16_t rgb565) {
-    if (rgb565 == 0xFFFF)
-        return 0xFFFF;
-    else if (rgb565 == 0x0000)
-        return 0x0000;
-    else
-        return 0xbdf7;
+    return (rgb565 == 0xFFFF) ? 0xFFFF : ((rgb565 == 0x0000) ? 0x0000 : 0xbdf7);
   }
 
   constexpr KDColor(uint16_t value) : m_value(GrayScale(value)) {}
