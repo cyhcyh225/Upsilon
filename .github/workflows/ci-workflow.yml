@@ -209,9 +209,9 @@ jobs:
   web:
     runs-on: ubuntu-latest
     steps:
-      - uses: numworks/setup-emscripten@v1
+      - uses: numworks/setup-emscripten@master
         with:
-          sdk: 1.40.1
+          sdk: latest
       - uses: actions/checkout@v2
         with:
           submodules: 'recursive'
