@@ -35,11 +35,8 @@ public:
   KDColor invert() const { return KDColor(~m_value); }
   operator uint16_t() const { return m_value; }
 private:
-  constexpr static uint16_t GrayScale(uint16_t rgb565) {
-    return (rgb565 == 0xFFFF) ? 0xFFFF : ((rgb565 == 0x0000) ? 0x0000 : 0xbdf7);
-  }
 
-  constexpr KDColor(uint16_t value) : m_value(GrayScale(value)) {}
+  constexpr KDColor(uint16_t value) : m_value(value) {}
   uint16_t m_value;
 };
 
