@@ -36,7 +36,7 @@ public:
   operator uint16_t() const { return m_value; }
 private:
 
-  constexpr KDColor(uint16_t value) : m_value(value) {}
+  constexpr KDColor(uint16_t value) : m_value((value == 0xFFFF) ? 0xFFFF : ((value == 0x0000) ? 0x0000 : 0xbdf7)) {}
   uint16_t m_value;
 };
 
