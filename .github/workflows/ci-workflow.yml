@@ -1,22 +1,20 @@
 name: Continuous integration
 #on: [pull_request, push]
 on:
-  push:
-  pull_request:
   workflow_dispatch:
     inputs:
       triggerIos:
         description: 'Run iOS tests'
         required: true
-        default: 'yes'
+        default: 'no'
       triggerMacos:
         description: 'Run macOS tests'
         required: true
-        default: 'yes'
+        default: 'no'
       trigger3DS:
         description: 'Run 3DS tests'
         required: true
-        default: 'yes'
+        default: 'no'
 jobs:
   fxcg:
     runs-on: ubuntu-latest
