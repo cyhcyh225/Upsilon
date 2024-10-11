@@ -1,7 +1,7 @@
 ProbaApp = "Probability"
 ProbaAppCapital = "PROBABILITY"
 ChooseDistribution = "Choose the distribution"
-Binomial = "Binomial"
+Binomial = "二项分布"
 Geometric = "Geometric"
 Uniforme = "Uniform"
 Normal = "Normal"
