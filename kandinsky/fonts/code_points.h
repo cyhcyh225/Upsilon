@@ -151,6 +151,10 @@ uint32_t SimpleCodePoints[] = {
   0x2265,  // ≥ // GREATER-THAN OR EQUAL TO
   0xFFFD,  // � // REPLACEMENT CHARACTER
   0x1d422, // 𝐢 // MATHEMATICAL BOLD SMALL I"
+  0x4E8C,  // 二 //
+  0x9879,  // 项 //
+  0x5206,  // 分 //
+  0x5E03,  // 布 //
 };
 
 uint32_t ExtendedCodePoints[] = {
